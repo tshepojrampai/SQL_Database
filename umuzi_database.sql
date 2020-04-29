@@ -29,4 +29,20 @@ CREATE TABLE Employees (
   PRIMARY KEY (EmployeeID)
 );
 
+INSERT INTO Employees VALUES (1,'Kani','Matthew','mat@gmail.com','Manager'),
+(2,'Lesly','Cronje','LesC@gmail.com','Clerk'),
+(3,'Gideon','Maduku','m@gmail.com','Accountant');
+
+CREATE TABLE Payments (
+  CustomerID int(11) NOT NULL AUTO_INCREMENT,
+  PaymentID int(11) DEFAULT NULL,
+  PaymentDate datetime DEFAULT NULL,
+  Amount decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (CustomerID)
+);
+
+INSERT INTO Payments VALUES (1,1,'2018-09-01 00:00:00',150.75),
+(4,3,'2018-09-03 00:00:00',700.60),
+(5,2,'2018-09-03 00:00:00',150.70);
+
 
