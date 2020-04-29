@@ -45,4 +45,16 @@ INSERT INTO Payments VALUES (1,1,'2018-09-01 00:00:00',150.75),
 (4,3,'2018-09-03 00:00:00',700.60),
 (5,2,'2018-09-03 00:00:00',150.70);
 
+CREATE TABLE Products (
+  ProductID int(11) NOT NULL AUTO_INCREMENT,
+  ProductName varchar(100) DEFAULT NULL,
+  Description varchar(300) DEFAULT NULL,
+  BuyPrice decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (ProductID)
+);
+
+INSERT INTO Products VALUES (1,'Harley Davidson Chopper','This replica featur$
+(2,'Classic Car','Turnable front wheels, steering function',550.75),
+(3,'Sports car','Turnable front wheels, steering function',700.60);
+
 
