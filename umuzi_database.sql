@@ -20,4 +20,13 @@ INSERT INTO Customers VALUES (1,'Lerato','Mabitso','Male','284 chaucer st',847$
 (4,'Charl','Muller','Male','290A Dorset Ecke',44856872553,'Charl.muller@yahoo.$
 (5,'Julia','Stein','Female','2 Wernerring',448672445058,'Js234@yahoo.com','Fra$
 
+CREATE TABLE Employees (
+  EmployeeID int(11) NOT NULL AUTO_INCREMENT,
+  FirstName varchar(50) DEFAULT NULL,
+  LastName varchar(50) DEFAULT NULL,
+  Email varchar(100) DEFAULT NULL,
+  JobTitle varchar(20) DEFAULT NULL,
+  PRIMARY KEY (EmployeeID)
+);
+
 
